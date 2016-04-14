@@ -5,7 +5,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
     font-size: 16px;
-    color: #555;
+    color: #71F1E1;
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
@@ -15,7 +15,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
-    color: #333;
+    color: #71F1E1;
 }
 
 
@@ -75,13 +75,12 @@ a:after {
 	/*bapolina/header-bg.jpg) no-repeat center top;*/
 	margin-top: -10px;
 	padding-top:20px;
-	text-align:center;
+	text-align:left;
 	background: #1a1a1a;
 	background-attachment: relative;
 	background-position: center center;
 	min-height: 700px;
 	width: 100%;
-	color: white;
 	
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -96,13 +95,11 @@ a:after {
 
 #headerwrap h1 {
 	margin-top: 150px;
-	color: white;
 	font-size: 70px;
 	font-weight: 700;
 }
 
 #headerwrap h3 {
-	color: white;
 	font-size: 30px;
 	font-weight: 100;
     font-family: 'Quicksand', sans-serif;
@@ -122,11 +119,10 @@ a:after {
 	background: #1a1a1a;
 	padding-top: 70px;
 	padding-bottom: 70px;
-	text-align: center
+	text-align: left
 }
 
 #f h3 {
-	color: white;
 	font-size: 28px;
 	font-weight: 700;
 	letter-spacing: 1px;	
