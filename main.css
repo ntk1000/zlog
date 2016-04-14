@@ -15,7 +15,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
-    color: #71F1E1;
+    color: #F1718D;
 }
 
 
@@ -119,7 +119,6 @@ a:after {
 	background: #1a1a1a;
 	padding-top: 70px;
 	padding-bottom: 70px;
-	text-align: left
 }
 
 #f h3 {
