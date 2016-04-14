@@ -1,0 +1,2 @@
+# zlog
+loggin daily activity
