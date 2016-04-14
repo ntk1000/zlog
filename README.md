@@ -14,4 +14,8 @@ via https://github.com/golang/go/issues/14795
 via http://stackoverflow.com/questions/21917661/can-you-connect-to-amazon-elasticache-redis-outside-of-amazon
 
 * want to redis-cli from local to aws elasticache(redis)
-* ssh -f -N -L6379:<your redis node endpoint>:6379 <your EC2 node that you use to connect to redis>
+* ssh port forwarding do the trick
+
+```
+ssh -f -N -L6379:<your redis node endpoint>:6379 <your EC2 node that you use to connect to redis>
+```
