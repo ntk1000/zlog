@@ -3,6 +3,17 @@ loggin daily activity
 
 ## 2016-04-15
 
+* security checkpoint
+  * firewall with port
+  * ssh setting /sshd_config
+  * ssl
+    * https://www.ssllabs.com/ssltest/ でチェックできる
+  * response header
+  * data暗号化
+  * tool
+    * OWASP ZedAttackProxy
+    * OpenCVE
+
 * mkr with jq
 
 ```
