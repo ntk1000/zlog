@@ -1,6 +1,15 @@
 # zlog
 loggin daily activity
 
+## 2016-04-15
+
+* mkr with jq
+
+```
+# 無名roleを抽出
+mkr hosts | jq '.[] | { name: .name, id: .id, role: .roleFullnames  } | select(.role==null)'
+```
+
 ## 2016-04-14
 
 via https://github.com/golang/go/issues/14795
