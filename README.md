@@ -1,6 +1,12 @@
 # zlog
 loggin daily activity
 
+## 2016-04-16
+
+* go-kit
+
+http://peter.bourgon.org/go-kit/
+
 ## 2016-04-15
 
 * security checkpoint
