@@ -1,6 +1,12 @@
 # zlog
 loggin daily activity
 
+## 2016-04-17
+
+* hubot lgtm
+
+https://github.com/bouzuya/hubot-lgtm
+
 ## 2016-04-16
 
 * go-kit
