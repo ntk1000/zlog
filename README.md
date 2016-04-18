@@ -1,6 +1,48 @@
 # zlog
 loggin daily activity
 
+## 2016-04-18
+
+* go dynamic json
+
+```
+package main
+
+import (
+  "fmt"
+  "strconv"
+  "encoding/json"
+)
+
+type Hoge struct {
+  Name string `json:name`
+  Tags map[string]string `json:tags`
+}
+
+func main() {
+  m := map[string]string{}
+  for i := 1; i < 6; i ++ {
+    ii := strconv.Itoa(i)
+    m["tag"+ii] = "text"+ii
+  }
+  b, _ := json.Marshal(m)
+
+  fmt.Println(m)
+  // map[tag3:text3 tag4:text4 tag5:text5 tag1:text1 tag2:text2]
+  fmt.Printf("%s\n",b)
+  // {"tag1":"text1","tag2":"text2","tag3":"text3","tag4":"text4","tag5":"text5"}
+
+  h := Hoge{Name:"hoge",Tags:m}
+  b2, _ := json.Marshal(h)
+
+  fmt.Println(h)
+  // {hoge map[tag1:text1 tag2:text2 tag3:text3 tag4:text4 tag5:text5]}
+  fmt.Printf("%s\n",string(b2))
+  // {"Name":"hoge","Tags":{"tag1":"text1","tag2":"text2","tag3":"text3","tag4":"text4","tag5":"text5"}}
+
+}
+```
+
 ## 2016-04-17
 
 * hubot lgtm
