@@ -1,6 +1,24 @@
 # zlog
 loggin daily activity
 
+## 2016-04-19
+
+* neovim / deoplete error
+  * https://github.com/Shougo/deoplete.nvim/issues/223
+
+```
+Failed to load python3 host. You can try to see what happened by starting Neovim with the environment variable $NVIM_PYTHON_LOG_FILE set to a file and
+ opening the generated log file. Also, the host stderr will be available in Neovim log, so it may contain useful information. See also ~/.nvimlog.
+```
+
+below script fixed my issue
+
+```
+pip3 --no-cache-dir install -U neovim
+```
+
+
+
 ## 2016-04-18
 
 * go dynamic json
@@ -81,7 +99,6 @@ via https://github.com/golang/go/issues/14795
 
 * go binary failed to run on 2016.03 amazon linux ami
 * seems to GOARCH=i386 option causes this error
-* 
 
 ## 2016-04-13
 
