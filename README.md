@@ -1,6 +1,28 @@
 # zlog
 loggin daily activity
 
+## 2016-04-20
+
+* sha256
+
+```
+package main
+
+import (
+	"fmt"
+	"crypto/sha256"
+	"strconv"
+)
+
+func main() {
+	for i := 1; i <= 100; i++ {
+		si := strconv.Itoa(i)
+		fmt.Printf("SHA-256 : %x\n", sha256.Sum256([]byte(si)))
+	}
+}
+
+```
+
 ## 2016-04-19
 
 * neovim / deoplete error
