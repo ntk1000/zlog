@@ -1,6 +1,58 @@
 # zlog
 loggin daily activity
 
+## 2016-04-21
+
+```
+package main
+ 
+import(
+  "fmt"
+  "reflect"
+)
+
+// Data Model
+type User struct {
+  Id  int
+  Name string
+  Origin string
+  Query func()
+  Tags map[string]string
+  Fields []string
+}
+ 
+func main(){
+
+  list := GetAttrName(&User{})
+  // slice with ... options passes ... parameters
+  PrintName(list...)
+
+}
+
+// GetAttrName returns struct attributes name
+func GetAttrName(m interface{}) ([]string) {
+
+  typ := reflect.TypeOf(m)
+  typ = typ.Elem()
+
+  attrs := []string{}
+
+  // loop through the struct's fields and set the map
+  for i := 0; i < typ.NumField(); i++ {
+    attrs = append(attrs,typ.Field(i).Name)
+  }
+
+  return attrs
+}
+
+// PrintName passing arguments to ... parameters
+func PrintName(list ...string){
+  for _, name := range list {
+    fmt.Println(name)
+  }
+}
+```
+
 ## 2016-04-20
 
 * sha256
