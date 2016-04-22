@@ -1,6 +1,18 @@
 # zlog
 loggin daily activity
 
+## 2016-04-22
+
+* golang testing
+  * via https://medium.com/@benbjohnson/structuring-tests-in-go-46ddee7a25c#.x9lf1gida
+  * no frameworks
+  * "underscore test" file
+  * test-specific types
+  *
+  * https://speakerdeck.com/mitchellh/advanced-testing-with-go is also fine slide for testing
+
+* i love test 
+
 ## 2016-04-21
 
 ```
