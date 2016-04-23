@@ -1,6 +1,21 @@
 # zlog
 loggin daily activity
 
+## 2016-04-23
+
+https://play.golang.org/p/TYOd9ELo2m
+
+https://play.golang.org/p/Xs2SQ59gez
+
+http://play.golang.org/p/VdKMLKMYse
+
+http://play.golang.org/p/sCcfzFuzqR
+
+https://play.golang.org/p/tlaYWTKXGr
+
+https://play.golang.org/p/DoBYGQruo6
+
+
 ## 2016-04-22
 
 * golang testing
