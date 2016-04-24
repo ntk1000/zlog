@@ -1,6 +1,10 @@
 # zlog
 loggin daily activity
 
+## 2016-04-24
+
+i'm sick
+
 ## 2016-04-23
 
 https://play.golang.org/p/TYOd9ELo2m
