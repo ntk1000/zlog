@@ -1,6 +1,10 @@
 # zlog
 loggin daily activity
 
+## 2016-04-25
+
+sick sick
+
 ## 2016-04-24
 
 i'm sick
