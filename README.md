@@ -1,6 +1,10 @@
 # zlog
 loggin daily activity
 
+## 2016-04-26
+
+https://github.com/progrium/entrykit
+
 ## 2016-04-25
 
 sick sick
