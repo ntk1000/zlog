@@ -1,6 +1,10 @@
 # zlog
 loggin daily activity
 
+## 2016-04-27
+
+http://yuuki.hatenablog.com/entry/diy-container
+
 ## 2016-04-26
 
 https://github.com/progrium/entrykit
