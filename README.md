@@ -1,6 +1,15 @@
 # zlog
 loggin daily activity
 
+## 2016-04-28
+
+docker network time out
+
+```
+docker-machine restart default
+eval $(docker-machine env default)
+```
+
 ## 2016-04-27
 
 http://yuuki.hatenablog.com/entry/diy-container
