@@ -1,6 +1,86 @@
 # zlog
 loggin daily activity
 
+## 2016-05-09
+
+running coreos on aws ecs
+
+via
+* https://coreos.com/os/docs/latest/booting-on-ecs.html
+* https://coreos.com/os/docs/latest/booting-on-ec2.html
+
+* on ec2 console
+* create launchconfiguration with coreos ami and user-data
+
+user-data are as follows
+
+* get etcd token via https://discovery.etcd.io/new?size=X
+* set ECS_CLUSTER env by ecs cluster name
+* start amazon-ecs-agent.service
+
+```
+#cloud-config
+
+coreos:
+  etcd2:
+    # generate a new token for each unique cluster from https://discovery.etcd.io/new?size=3
+    # specify the initial size of your cluster with ?size=X
+    discovery: https://discovery.etcd.io/a4ca4dd8ac25ff375ff9439c929b9eb3
+    # multi-region and multi-cloud deployments need to use $public_ipv4
+    advertise-client-urls: http://$private_ipv4:2379,http://$private_ipv4:4001
+    initial-advertise-peer-urls: http://$private_ipv4:2380
+    # listen on both the official ports and the legacy ports
+    # legacy ports can be omitted if your application doesn't depend on them
+    listen-client-urls: http://0.0.0.0:2379,http://0.0.0.0:4001
+    listen-peer-urls: http://$private_ipv4:2380,http://$private_ipv4:7001
+  units:
+    - name: etcd2.service
+      command: start
+    - name: fleet.service
+      command: start
+    - name: amazon-ecs-agent.service
+      command: start
+      runtime: true
+      content: |
+       [Unit]
+       Description=AWS ECS Agent
+       Documentation=https://docs.aws.amazon.com/AmazonECS/latest/developerguide/
+       Requires=docker.socket
+       After=docker.socket
+       [Service]
+       Environment=ECS_CLUSTER=my-ecs-cluster-name
+       Environment=ECS_LOGLEVEL=info
+       Environment=ECS_VERSION=latest
+       Restart=on-failure
+       RestartSec=30
+       RestartPreventExitStatus=5
+       SyslogIdentifier=ecs-agent
+       ExecStartPre=-/bin/mkdir -p /var/log/ecs /var/ecs-data /etc/ecs
+       ExecStartPre=-/usr/bin/touch /etc/ecs/ecs.config
+       ExecStartPre=-/usr/bin/docker kill ecs-agent
+       ExecStartPre=-/usr/bin/docker rm ecs-agent
+       ExecStartPre=/usr/bin/docker pull amazon/amazon-ecs-agent:${ECS_VERSION}
+       ExecStart=/usr/bin/docker run --name ecs-agent \
+                                     --env-file=/etc/ecs/ecs.config \
+                                     --volume=/var/run/docker.sock:/var/run/docker.sock \
+                                     --volume=/var/log/ecs:/log \
+                                     --volume=/var/ecs-data:/data \
+                                     --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro \
+                                     --volume=/run/docker/execdriver/native:/var/lib/docker/execdriver/native:ro \
+                                     --publish=127.0.0.1:51678:51678 \
+                                     --env=ECS_LOGFILE=/log/ecs-agent.log \
+                                     --env=ECS_LOGLEVEL=${ECS_LOGLEVEL} \
+                                     --env=ECS_DATADIR=/data \
+                                     --env=ECS_CLUSTER=${ECS_CLUSTER} \
+                                     amazon/amazon-ecs-agent:${ECS_VERSION}
+```
+
+* create elb and autoscaling
+
+* on ecs console
+* create ecs cluster
+* start service
+
 ## 2016-04-28
 
 docker network time out
@@ -186,6 +266,8 @@ func main() {
 
 }
 ```
+
+* create autoscaling
 
 ## 2016-04-17
 
