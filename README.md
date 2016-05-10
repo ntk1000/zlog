@@ -1,6 +1,33 @@
 # zlog
 loggin daily activity
 
+## 2016-05-10
+
+aws ecs service limits
+
+via 
+http://docs.aws.amazon.com/ja_jp/AmazonECS/latest/developerguide/service_limits.html
+
+The following table provides the default limits for Amazon ECS for an AWS account which can be changed. For more information, see AWS Service Limitsin the Amazon Web Services General Reference.
+
+Resource	Default Limit
+Number of clusters per region, per account	1000
+Number of container instances per cluster	1000
+Number of services per cluster	500
+
+The following table provides other limitations for Amazon ECS that cannot be changed.
+
+Resource	Default Limit
+Number of load balancers per service	1
+Number of tasks per service (the desired count)	1000
+Number of tasks launched (count) per run-task	10
+Number of container instances per start-task	10
+Throttle on container instance registration rate	1 per second / 60 max per minute
+Task definition size limit	32 KiB
+Task definition max containers	10
+Throttle on task definition registration rate	1 per second / 60 max per minute
+
+
 ## 2016-05-09
 
 running coreos on aws ecs
