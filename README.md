@@ -1,6 +1,18 @@
 # zlog
 loggin daily activity
 
+## 2016-05-11
+
+mysql(RDS or Aurora) dump restore from local file
+
+```
+$ ls
+dump.sql
+
+$ mysql -h your.rds.amazonaws.com -P 3306 -u userid -p
+mysql> source dump.sql
+```
+
 ## 2016-05-10
 
 aws ecs service limits
