@@ -1,6 +1,20 @@
 # zlog
 loggin daily activity
 
+## 2016-05-17
+
+setting timezone at alpine linux on docker
+
+```
+
+FROM gliderlabs/alpine:latest
+
+RUN apk --no-cache add tzdata && \
+  cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime && \
+  apk del tzdata 
+
+```
+
 ## 2016-05-11
 
 mysql(RDS or Aurora) dump restore from local file
