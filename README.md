@@ -1,6 +1,19 @@
 # zlog
 loggin daily activity
 
+## 2016-05-24
+
+install redis-cli on ec2
+
+```
+$ sudo yum install -y gcc
+$ wget http://download.redis.io/redis-stable.tar.gz
+$ tar xvzf redis-stable.tar.gz
+$ cd redis-stable
+$ make
+$ src/redis-cli -h %elasticacheendpoint% -p 6379
+```
+
 ## 2016-05-17
 
 setting timezone at alpine linux on docker
