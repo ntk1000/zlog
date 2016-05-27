@@ -1,6 +1,16 @@
 # zlog
 loggin daily activity
 
+## 2016-05-27
+
+slack time signal
+
+```
+/remind #channel to morning standup at 10am every weekday
+/remind #channel to evening standup at 5pm every weekday
+/remind list
+```
+
 ## 2016-05-24
 
 install redis-cli on ec2
