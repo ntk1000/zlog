@@ -1,6 +1,16 @@
 # zlog
 loggin daily activity
 
+## 2016-06-06
+
+docker security check
+
+* run your docker containers e.g. via docker-compose
+* then git clone https://github.com/docker/docker-bench-security.git
+* cd docker-bench-security
+* docker-compose run --rm docker-bench-security
+* docker-bench-security prints security check result via stdout
+
 ## 2016-05-27
 
 slack time signal
