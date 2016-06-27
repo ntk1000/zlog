@@ -1,6 +1,18 @@
 # zlog
 loggin daily activity
 
+## 2016-06-27
+
+personal memo
+
+* https://talks.golang.org/2012/10things.slide 
+* https://www.appneta.com/blog/automated-testing-with-docker/
+* http://developers.linecorp.com/blog/ja/?p=3392
+* https://thepracticalsysadmin.com/ecs-cluster-turnup-with-coreos-and-terraform/
+* http://postd.cc/eight-docker-development-patterns/
+* http://yut.hatenablog.com/entry/20130617/1371425713
+
+
 ## 2016-06-07
 
 set timezone and ecs-agent to coreos
