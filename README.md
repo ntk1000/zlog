@@ -1,6 +1,16 @@
 # zlog
 loggin daily activity
 
+## 2016-07-15
+
+rbenv init
+
+```
+eval "$(rbenv init -)"
+rbenv rehash
+gem install hogehoge
+```
+
 ## 2016-06-27
 
 personal memo
