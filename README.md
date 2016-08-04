@@ -1,6 +1,19 @@
 # zlog
 loggin daily activity
 
+## 2016-08-04
+
+docker entrypoint override
+
+* overrider with --entrypoint flag
+* command with end parameter
+
+```
+$ docker run -it --entrypoint /bin/consul gliderlabs/consul-server version
+Consul v0.6.4
+...
+```
+
 ## 2016-07-15
 
 rbenv init
