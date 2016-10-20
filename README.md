@@ -5,6 +5,14 @@ loggin daily activity
 
 terraform cheetsheat
 
+* terraform loads all of `.tf` file
+* `terraform plan` shows what changes will apply to infra (aka dry-run)
+* `terraform apply` creates "real" resources
+* `terraform show` shows actual infra status
+* `terraform plan -destroy` shows what resources will destroy
+* `terraform destroy` destroy infra
+
+
 ## 2016-08-04
 
 docker entrypoint override
