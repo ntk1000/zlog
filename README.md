@@ -1,6 +1,10 @@
 # zlog
 loggin daily activity
 
+## 2016-10-20
+
+terraform cheetsheat
+
 ## 2016-08-04
 
 docker entrypoint override
