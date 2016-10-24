@@ -1,6 +1,25 @@
 # zlog
 loggin daily activity
 
+## 2016-10-24
+
+get stdin in shell
+
+```
+while read line
+do
+	result=$result$line
+done <  "${1:-/dev/stdin}"
+
+```
+
+trim last charactor of variables
+
+```
+result=hogehoge
+echo ${result:0:${#result}-1}
+```
+
 ## 2016-10-20
 
 terraform cheetsheat
