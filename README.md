@@ -1,6 +1,27 @@
 # zlog
 loggin daily activity
 
+## 2016-10-28
+
+how 2 get image via aws ecr on docker / docker-compose?
+
+* `aws ecr get-login` command provides `docker login` to aws ecr
+* sample shell as follows
+
+```
+# check credentails
+: "${AWS_ACCESS_KEY_ID?env empty}"
+: "${AWS_SECRET_ACCESS_KEY?env empty}"
+: "${AWS_DEFAULT_REGION?env empty}"
+
+echo "docker login via aws ecr command"
+#eval "$(docker-machine env default)"
+$(aws ecr get-login --region $AWS_DEFAULT_REGION)
+```
+
+after `docker login` passes, docker / docker-compose can handle docker images on aws ecr.
+**token via `get-login` command is valid for only 12 hours.**
+
 ## 2016-10-24
 
 get stdin in shell
