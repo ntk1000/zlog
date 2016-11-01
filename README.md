@@ -1,6 +1,50 @@
 # zlog
 loggin daily activity
 
+## 2016-11-01
+
+! not for production
+docker-compose on coreos
+via http://www.ericluwj.com/2015/10/20/installing-docker-compose-in-coreos.html
+* sudo su -
+* mkdir -p /opt/bin
+* curl -L https://github.com/docker/compose/releases/download/X.Y.Z/docker-compose-`uname -s`-`uname -m` > /opt/bin/docker-compose
+* chmod +x /opt/bin/docker-compose
+* that's it
+
+## 2016-10-31
+
+coreos on idcf cloud
+
+* add latest ISO(change URL from https to http)
+* create server(name:core1) from ISO with newly created SSH Key
+* access to `core1` via web console and type `sudo passwd core`
+* create public ip and add firewall rule , port forward to `core1`
+* ssh to `core1`
+* create cloud-config.yml
+* install coreos to disk via `sudo coreos-install -d /dev/sda -C stable -c ./cloud-config.yml`
+
+```
+#cloud-config
+
+coreos:
+ units:
+   -
+     name: docker.service
+     command: restart
+   -
+     name: settimezone.service
+     command: start
+     content: |
+       [Unit]
+       Description=Set Timezone
+       [Service]
+       ExecStart=/usr/bin/timedatectl set-timezone Asia/Tokyo
+       RemainAfterExit=yes
+       Type=oneshot
+```
+
+
 ## 2016-10-28
 
 how 2 get image via aws ecr on docker / docker-compose?
