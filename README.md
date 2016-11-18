@@ -1,6 +1,22 @@
 # zlog
 loggin daily activity
 
+## 2016-11-18
+
+erase specific git file/directory
+
+```
+file
+$ git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch filename' HEAD
+
+directory
+$ git filter-branch -f --index-filter 'git rm -rf --cached --ignore-unmatch dirname' HEAD
+
+push
+$ git push --force origin branch
+
+```
+
 ## 2016-11-01
 
 ! not for production
