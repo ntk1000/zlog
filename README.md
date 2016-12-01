@@ -1,6 +1,19 @@
 # zlog
 loggin daily activity
 
+## 2016-12-01
+
+destroy specific target with tf file via terraform
+
+```
+# plan
+$ terraform plan -destroy -target=aws_efs_file_system.test -target=aws_efs_mount_target.test
+
+# destroy
+$ terraform destroy -target=aws_efs_file_system.test -target=aws_efs_mount_target.test
+```
+
+
 ## 2016-11-18
 
 erase specific git file/directory
