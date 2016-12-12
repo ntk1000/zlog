@@ -1,6 +1,39 @@
 # zlog
 loggin daily activity
 
+## 2016-12-12
+
+via http://nekop.hatenablog.com/entry/2015/08/21/160436
+docker clean-up w/o error
+
+```
+docker ps -q -f status=exited | xargs --no-run-if-empty docker rm
+docker images -q -f dangling=true | xargs --no-run-if-empty docker rmi
+```
+
+
+## 2016-12-08
+
+exclude commented out and blank line
+
+```
+grep -v -e '#' -e '^$' ./httpd.conf
+```
+
+wc under multi dir/files
+
+```
+wc -l ./*/*.conf | sort | $PAGER
+```
+
+## 2016-12-07
+
+show ruby configure options
+
+```
+ruby -r rbconfig -e 'puts RbConfig::CONFIG["configure_args"]'
+```
+
 ## 2016-12-01
 
 destroy specific target with tf file via terraform
