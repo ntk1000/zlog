@@ -1,6 +1,19 @@
 # zlog
 loggin daily activity
 
+## 2017-01-11
+
+via
+* https://coreos.com/os/docs/latest/scheduling-tasks-with-systemd-timers.html
+* http://stackoverflow.com/questions/29086918/docker-compose-to-coreos
+* http://qiita.com/TakiTake@github/items/b66aeb1eb266f97fafe5
+
+auto start docker-compose on coreos
+
+```
+sudo coreos-cloudinit --from-file /path/to/cloud-config.yml
+```
+
 ## 2016-12-12
 
 via http://nekop.hatenablog.com/entry/2015/08/21/160436
