@@ -1,6 +1,14 @@
 # zlog
 loggin daily activity
 
+## 2017-01-12
+
+```
+sudo td-agent-gem install fluent-plugin-rewrite-tag-filter
+sudo td-agent-gem install fluent-plugin-slack
+```
+
+
 ## 2017-01-11
 
 via
