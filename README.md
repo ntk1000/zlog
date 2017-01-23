@@ -1,6 +1,12 @@
 # zlog
 loggin daily activity
 
+## 2017-01-23
+
+```
+git remote set-url --add origin git@optional_git_location.git
+```
+
 ## 2017-01-12
 
 ```
