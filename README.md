@@ -3,8 +3,9 @@ loggin daily activity
 
 ## 2017-01-23
 
+log location of ec2 user-data
 ```
-git remote set-url --add origin git@optional_git_location.git
+less /var/log/cloud-init-output.log
 ```
 
 ## 2017-01-12
