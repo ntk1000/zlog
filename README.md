@@ -1,9 +1,24 @@
 # zlog
 loggin daily activity
 
+## 2017-01-24
+
+about td-agent
+
+```
+# conf dry-run
+sudo td-agent --dry-run -c /etc/td-agent/td-agent.conf
+# init
+sudo /etc/init.d/td-agent status (etc.)
+# log
+sudo tail -f /var/log/td-agent/td-agent.log
+```
+
+
 ## 2017-01-23
 
 log location of ec2 user-data
+
 ```
 less /var/log/cloud-init-output.log
 ```
