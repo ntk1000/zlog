@@ -1,6 +1,15 @@
 # zlog
 loggin daily activity
 
+## 2017-02-07
+
+rm under s3 bucket
+
+```
+aws s3 rm s3://bucket-name/ --recursive
+```
+
+
 ## 2017-01-24
 
 about td-agent
