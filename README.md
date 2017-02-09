@@ -1,6 +1,18 @@
 # zlog
 loggin daily activity
 
+## 2017-02-09
+
+curl only shows headers via http://te2u.hatenablog.jp/entry/2015/08/04/001554
+
+```
+curl -s -D - http://example.com -o /dev/null
+```
+
+-s : silent mode
+-D : show headers
+-o : out responcebody to...
+
 ## 2017-02-07
 
 rm under s3 bucket
