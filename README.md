@@ -1,9 +1,22 @@
 # zlog
 loggin daily activity
 
+## 2017-10-06
+
+vim changelog
+add .xshrc this function
+
+```
+function zs() {
+    LOG=/path/to/logfile
+    sed -i -e "4i ## `date +'%Y-%m-%d'`" $LOG | vim $LOG
+}
+```
+
+
 ## 2017-10-05
 
-table diff for mysql via http://d.hatena.ne.jp/CAMUS/20060111/1136984749
+### table diff for mysql via http://d.hatena.ne.jp/CAMUS/20060111/1136984749
 
 * same table layout
 * want to check key exists only on one side
