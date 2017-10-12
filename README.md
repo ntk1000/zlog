@@ -3,6 +3,13 @@ loggin daily activity
 
 ## 2017-10-06
 
+replace string under directory via sed
+
+```
+find . -type f -print | xargs sed -i -e 's/before/after/g'
+```
+
+
 vim changelog
 add .xshrc this function
 
