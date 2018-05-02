@@ -1,6 +1,6 @@
 ---
-layout: post
-title: feb 2016 session cookie memo
+title: session cookie memo
+date: 2016-02-12
 ---
 
 # development

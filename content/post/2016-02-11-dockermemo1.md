@@ -1,6 +1,6 @@
 ---
-layout: post
-title: feb 2016 docker memo
+title: docker memo
+date: 2016-02-11
 ---
 
 usually i'm confused which docker command to use...

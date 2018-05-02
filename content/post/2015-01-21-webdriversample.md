@@ -1,6 +1,6 @@
 ---
-layout: post
 title: WebDriver.js
+date: 2015-01-21
 ---
 
 [この記事](http://qiita.com/takatama/items/ddaf9e85c71f7f0e922a)を参考にweb自動化の練習

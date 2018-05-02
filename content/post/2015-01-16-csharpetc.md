@@ -1,6 +1,6 @@
 ---
-layout: post
-title: day3
+title: "c#"
+date: 2015-01-16
 ---
 
 

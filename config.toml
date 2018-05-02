@@ -2,7 +2,6 @@ baseurl = "https://ntk1000.github.io"
 languageCode = "en"
 title = "ntk1000 zlog"
 theme = "Hucore"
-disqusShortname = "shortname"
 googleAnalytics = "UA-33278616-2"
 canonifyurls = true
 

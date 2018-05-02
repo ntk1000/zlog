@@ -1,6 +1,6 @@
 ---
-layout: post
 title: changefont
+date: 2015-01-29
 ---
 
 [font](https://github.com/yascentur/RictyDiminished)入れてみた

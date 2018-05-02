@@ -1,6 +1,6 @@
 ---
-layout: post
-title: feb 2016 websocket in golang memo
+title: websocket in golang memo
+date: 2016-02-18
 ---
 
 use gorilla websocket
