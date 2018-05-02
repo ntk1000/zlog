@@ -1,0 +1,40 @@
+baseurl = "https://example.com"
+languageCode = "en"
+title = "ntk1000 zlog"
+theme = "Hucore"
+disqusShortname = "shortname"
+googleAnalytics = "UA-33278616-2"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[params]
+description = "Your description here"
+keywords = ["keyword 1", "keyword 2", "keyword 3"]
+author = "ntk1000"
+sharingicons = true
+
+[params.highlight]
+style = "github"
+languages = ["go", "dockerfile"]
+
+[[params.social]]
+url = "https://github.com/ntk1000"
+fa_icon = "fa-github"
+
+[[params.social]]
+url = "https://twitter.com/ntk1000"
+fa_icon = "fa-twitter"
+
+[[params.social]]
+url = "https://linkedin.com/in/jun-asano-72648213b"
+fa_icon = "fa-linkedin-square"
+
+[[params.social]]
+url = "/index.xml"
+fa_icon = "fa-rss"
+
+[[params.socialshare]]
+url = "https://linkedin.com/in/jun-asano-72648213b"
+fa_icon = "fa-linkedin-square"
